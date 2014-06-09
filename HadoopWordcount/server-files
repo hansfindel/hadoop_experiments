@@ -1,0 +1,94 @@
+hfindel@hercules:/user/cbuil$ vi 100000/
+
+" ============================================================================
+" Netrw Directory Listing                                        (netrw v143)
+"   /home/cbuil/100000
+"   Sorted by      name
+"   Sort sequence: [\/]$,\<core\%(\.\d\+\)\=\>,\.h$,\.c$,\.cpp$,\~\=\*$,*,\.o$,\.obj$,\.info$,\.swp$,\.bak$,\~$
+"   Quick Help: <F1>:help  -:go up dir  D:delete  R:rename  s:sort-by  x:exec
+" ============================================================================
+../                                                                                                                                                                                                     
+11200000_allsame_1bytestr_2.txt
+11200000_different_1bytestr_2.txt
+11200000_onepercent_1bytestr_2.txt
+11200000_original_1bytestr_1.txt
+
+
+
+11200000_allsame_1bytestr_2.txt
+0,b
+1,b
+2,b
+3,b
+4,b
+5,b
+6,b
+7,b
+8,b
+9,b
+10,b
+11,b
+12,b
+13,b
+14,b
+15,b
+16,b
+17,b
+18,b
+19,b
+20,b
+21,b
+22,b
+23,b
+24,b
+25,b
+26,b
+27,b
+28,b
+29,b
+30,b
+31,b
+32,b
+33,b
+34,b
+35,b
+36,b
+37,b
+38,b
+39,b
+40,b
+41,b
+42,b
+43,b
+44,b
+45,b
+46,b
+
+
+
+11200000_different_1bytestr_2
+11200000,b
+11200001,b
+11200002,b
+11200003,b
+11200004,b
+11200005,b
+11200006,b
+11200007,b
+11200008,b
+11200009,b
+11200010,b
+11200011,b
+11200012,b
+11200013,b
+11200014,b
+11200015,b
+...
+
+22399997,b
+22399998,b
+22399999,b
+
+
+
+

@@ -1,0 +1,56 @@
+2014-06-08 16:55:46.864 java[13324:1003] Unable to load realm info from SCDynamicStore
+14/06/08 16:55:46 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+14/06/08 16:55:47 INFO Configuration.deprecation: session.id is deprecated. Instead, use dfs.metrics.session-id
+14/06/08 16:55:47 INFO jvm.JvmMetrics: Initializing JVM Metrics with processName=JobTracker, sessionId=
+14/06/08 16:55:47 WARN mapreduce.JobSubmitter: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+14/06/08 16:55:47 WARN mapreduce.JobSubmitter: No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+14/06/08 16:55:47 INFO input.FileInputFormat: Total input paths to process : 1
+14/06/08 16:55:47 INFO mapreduce.JobSubmitter: number of splits:1
+14/06/08 16:55:47 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_local1493175206_0001
+14/06/08 16:55:47 WARN conf.Configuration: file:/tmp/hadoop-hansfindel/mapred/staging/hansfindel1493175206/.staging/job_local1493175206_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+14/06/08 16:55:47 WARN conf.Configuration: file:/tmp/hadoop-hansfindel/mapred/staging/hansfindel1493175206/.staging/job_local1493175206_0001/job.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+14/06/08 16:55:47 WARN conf.Configuration: file:/tmp/hadoop-hansfindel/mapred/local/localRunner/hansfindel/job_local1493175206_0001/job_local1493175206_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.retry.interval;  Ignoring.
+14/06/08 16:55:47 WARN conf.Configuration: file:/tmp/hadoop-hansfindel/mapred/local/localRunner/hansfindel/job_local1493175206_0001/job_local1493175206_0001.xml:an attempt to override final parameter: mapreduce.job.end-notification.max.attempts;  Ignoring.
+14/06/08 16:55:47 INFO mapreduce.Job: The url to track the job: http://localhost:8080/
+14/06/08 16:55:47 INFO mapreduce.Job: Running job: job_local1493175206_0001
+14/06/08 16:55:47 INFO mapred.LocalJobRunner: OutputCommitter set in config null
+14/06/08 16:55:47 INFO mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+14/06/08 16:55:47 INFO mapred.LocalJobRunner: Waiting for map tasks
+14/06/08 16:55:47 INFO mapred.LocalJobRunner: Starting task: attempt_local1493175206_0001_m_000000_0
+14/06/08 16:55:47 INFO util.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
+14/06/08 16:55:47 INFO mapred.Task:  Using ResourceCalculatorProcessTree : null
+14/06/08 16:55:47 INFO mapred.MapTask: Processing split: file:/Users/hansfindel/Desktop/isbd-lab6/isbd_join_inter/words.txt:0+277
+14/06/08 16:55:47 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+14/06/08 16:55:47 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+14/06/08 16:55:47 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+14/06/08 16:55:47 INFO mapred.MapTask: soft limit at 83886080
+14/06/08 16:55:47 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+14/06/08 16:55:47 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+14/06/08 16:55:47 INFO mapred.MapTask: Starting flush of map output
+14/06/08 16:55:47 INFO mapred.LocalJobRunner: map task executor complete.
+
+14/06/08 16:55:47 WARN mapred.LocalJobRunner: job_local1493175206_0001
+java.lang.Exception: java.io.IOException: Type mismatch in value from map: expected org.apache.hadoop.io.IntWritable, received org.apache.hadoop.io.Text
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.runTasks(LocalJobRunner.java:462)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job.run(LocalJobRunner.java:522)
+Caused by: java.io.IOException: Type mismatch in value from map: expected org.apache.hadoop.io.IntWritable, received org.apache.hadoop.io.Text
+	at org.apache.hadoop.mapred.MapTask$MapOutputBuffer.collect(MapTask.java:1054)
+	at org.apache.hadoop.mapred.MapTask$NewOutputCollector.write(MapTask.java:692)
+	at org.apache.hadoop.mapreduce.task.TaskInputOutputContextImpl.write(TaskInputOutputContextImpl.java:89)
+	at org.apache.hadoop.mapreduce.lib.map.WrappedMapper$Context.write(WrappedMapper.java:112)
+	at isbd.isbd_join_inter.WordMapper.map(WordMapper.java:22)
+	at isbd.isbd_join_inter.WordMapper.map(WordMapper.java:1)
+	at org.apache.hadoop.mapreduce.Mapper.run(Mapper.java:145)
+	at org.apache.hadoop.mapred.MapTask.runNewMapper(MapTask.java:764)
+	at org.apache.hadoop.mapred.MapTask.run(MapTask.java:340)
+	at org.apache.hadoop.mapred.LocalJobRunner$Job$MapTaskRunnable.run(LocalJobRunner.java:243)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:439)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:895)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:918)
+	at java.lang.Thread.run(Thread.java:695)
+14/06/08 16:55:48 INFO mapreduce.Job: Job job_local1493175206_0001 running in uber mode : false
+14/06/08 16:55:48 INFO mapreduce.Job:  map 0% reduce 0%
+14/06/08 16:55:48 INFO mapreduce.Job: Job job_local1493175206_0001 failed with state FAILED due to: NA
+14/06/08 16:55:48 INFO mapreduce.Job: Counters: 0

@@ -1,0 +1,1 @@
+mvn exec:java -Dexec.mainClass="wordcount.WordCount" -Dexec.args="./words.txt ./output" 

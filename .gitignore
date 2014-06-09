@@ -1,0 +1,15 @@
+# ignore metadata
+.metadata/*
+./metadata/*
+/metadata/*
+/metadata/plugins/*
+
+*.snap
+
+*.DS_Store
+
+# ignore compiled things
+*.javac
+
+# ignore outputs
+*.crc
